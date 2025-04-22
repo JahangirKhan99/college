@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Govt: GDC Buner</title>
+    <link rel="shortcut icon" href="image1.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="Gdc">
+            <h1>Govt Degree College Buner</h1>
+        </div>
+        <div class="navbar">
+
+
+
+            <a href="index.html" class="tab">Home </a>
+            <a href="slipcc.html" class="tab"> Exam Fee</a>
+            <a href="fine.html" class="tab">Fine Slip</a>
+            <a href="" class="tab">Addmission</a>
+            <a href="" class="tab;">Form</a>
+
+        </div>
+    </header>
+
+    <main class="head2">
+        <form id="challanForm">
+            <label style="text-align: center ; color: rgb(255, 4, 4);" for="topic"><h3>Exam Fee</h3></label> <br>
+            <label for="name"> <i class="fa-solid fa-user"></i> Name:</label> <br>
+            <input type="text" placeholder="Enter  Name" id="name" oninput="this.value.charAt(0).toUpperCase() + this.value.slice(1).toLowerCase();"><br><br>
+
+            <label for="f/name"> <i class="fas fa-user"></i> F/Name:</label> <br>
+            <input type="text" placeholder="Enter F/Name" id="f/name" oninput="this.value.charAt(0).toUpperCase() + this.value.slice(1).toLowerCase();"><br><br>
+
+            <label for="college"> <i class="fa-solid fa-building-columns"></i> College:</label> <br>
+            <input type="text" placeholder="College Name" id="college" oninput="this.value.charAt(0).toUpperCase() + this.value.slice(1).toLowerCase();" list="clgn"><br><br>
+            <datalist id="clgn">
+                <option value="Govt. Degree College Buner"></option>
+            </datalist>
+            <label for="Reg"><i class="fa-solid fa-registered"></i> Registration No :</label> <br>
+            <input type="text" placeholder="Registration No" id="Reg" list="rgn"> <br> <br>
+            <datalist id="rgn">
+                <option value="2021-GCDUoB-"></option>
+                <option value="2023-GCDUoB-"></option>
+                <option value="2024-GCDUoB-"></option>
+                <option value="2025-GCDUoB-"></option>
+                <option value="2026-GCDUoB-"></option>
+                <option value="2027-GCDUoB-"></option>
+                <option value="2028-GCDUoB-"></option>
+                <option value="2029-GCDUoB-"></option>
+                <option value="2030-GCDUoB-"></option>
+            </datalist>
+            <label for="nic"> <i style="background-color: whit;" class="fa-solid fa-id-card"></i> N.I.C. No:</label> <br>
+            <input type="text" id="nic" maxlength="15" placeholder="15123-4567890-1"><br><br>
+
+            <label for="Samester"><i class="fa-regular fa-calendar-days"></i> Samester/Year :</label> <br>
+            <input type="text" placeholder="Samester/Year" id="Samester" list="samstr"> <br> <br>
+            <datalist id="samstr">
+                <option value="1st Semester"></option>
+                <option value="2nd Semester"></option>
+                <option value="3rd Semester"></option>
+                <option value="4th Semester"></option>
+                <option value="5th Semester"></option>
+                <option value="6th Semester"></option>
+                <option value="7th Semester"></option>
+                <option value="8Th Semester"></option>
+            </datalist>
+            <label for="Dept"><i class="fa-solid fa-building-user"></i> Program/Dept:</label> <br>
+            <input type="text" placeholder="Program/Dept" id="Dept" list="dpt"><br> <br>
+            <datalist id="dpt">
+                <option value="BS Islamic Studies"></option>
+                <option value="BS Computer Science"></option>
+                <option value="BS Political Science"></option>
+                <option value="BS Zoology"></option>
+                <option value="BS English"></option>
+                <option value="BS Urdu"></option>
+                <option value="BS Physics"></option>
+                <option value="BS Mathematics"></option>
+                <option value="BS Botony"></option>
+                <option value="BS Pak Studies"></option>
+            </datalist>
+
+            <label for="ContactNo:"><i class="fa-solid fa-phone-volume"></i> Contact No:</label> <br>
+            <input type="number" name="" id="ContactNo" placeholder="Contact No"> <br><br>
+            <label> <i class="fa-solid fa-sack-dollar"></i> Fee Amount (in Rs.):</label> <br>
+            <input type="number" id="amount" placeholder="Write amount in digits. (i.e 5000)" oninput="convertAmount()"><br>
+            <small id="amountWords" class="amount-text"></small><br><br>
+
+            <button type="button" onclick="fillPDF()">Download</button>
+        </form>
+
+    </main>
+    <hr>
+
+    <footer>
+        <div class="image-block">
+            <div class="loader"> </div>
+
+            <img src="image5.jpg" alt="pic of devoloper">
+
+
+        </div>
+
+        <div class="link">
+            <h2>Abu Muhammad Jahangir Khan</h2>
+            <h5>(BSCS First Samester DGC Buner)</h5>
+            <br>
+            <hr>
+            <br>
+            <h3>All Rights Reserved.</h3>
+            <h3>Contact with : </h3>
+            <h4>Whatsapp : <a href="https://wa.me/923339279925">03339279925</a> </h4>
+            <h4>Email : <a href="mailto:jahangirkhan9279925@gmail.com">jahangirkhan9279925@gmail.com</a> </h4>
+
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    transition: 0.2s;
+}
+
+body {
+    background-color: #27beff;
+    color: rgb(0, 0, 0);
+    height: 100vh;
+}
+
+.Gdc {
+    display: flex;
+    justify-self: center;
+    padding-top: 1rem;
+    font-size: 3.4vmin;
+    color: rgba(255, 0, 0, 0.97);
+}
+
+.navbar {
+    padding: 2px;
+    margin-top: 2rem;
+    height: 4vh;
+    justify-items: center;
+    align-items: center;
+    background-color: #fa2b8f;
+    display: flex;
+    flex-direction: row;
+    font-size: 2.9vmin;
+    justify-content: space-around;
+    border: 1px solid;
+    border-radius: 1rem;
+    border-top: none;
+    box-shadow: 1px 2px 6px 3px rgb(33, 239, 246);
+}
+
+.navbar a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding-left: 2px;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: rgb(0, 255, 21);
+}
+
+.container {
+    height: 70vh;
+    background-color: #50c8ff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.0vmin;
+}
+
+.element {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 2px solid red;
+    padding: 20px;
+    height: 40vh;
+    border-radius: 1rem;
+    box-shadow: 1px 4px 9px 1px rgb(23, 34, 21);
+}
+
+.element:hover {
+    background-color: #18d8ff;
+    font-weight: bold;
+}
+
+.element a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    margin-bottom: 1rem;
+    border: 2px solid rgb(13, 36, 41);
+    height: 2vmin;
+    padding: 20px;
+    border-radius: 1rem;
+    background-color: #c6ddf0;
+    box-shadow: 1px 4px 9px 1px rgb(6, 37, 0);
+    justify-self: center;
+}
+
+.element a:hover {
+    background-color: #fff;
+}
+
+footer {
+    height: 25vh;
+    background-color: #817676;
+    color: white;
+    padding: 3rem;
+    font-size: 2.7vmin;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.image-block {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    flex-direction: column;
+    padding-right: 20px;
+}
+
+.loader {
+    border-bottom: 3px solid rgb(145, 254, 21);
+    border-top: 3px solid rgb(145, 254, 21);
+    height: 7.2rem;
+    width: 7.2rem;
+    border-radius: 50%;
+    animation: spin 1.5s linear infinite;
+    z-index: 1;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+img {
+    position: absolute;
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+}
+
+.link h2,
+h3,
+h4 {
+    padding: 0.2rem;
+}
+
+
+/* style for slipcc.. */
+
+.head2 {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    font-size: 3.7vmin;
+    margin: 0px;
+    padding: 40px;
+}
+
+#challanForm {
+    font-weight: bolder;
+    width: 60vw;
+    padding: 2rem;
+    border-radius: 15px;
+    color: rgb(0, 0, 0);
+    box-shadow: 1px 1px 20px 1px rgb(253, 0, 0);
+}
+
+#challanForm input {
+    font-weight: bold;
+    background-color: #e2dfdf;
+    height: 2rem;
+    width: 50vw;
+    border-radius: 20px;
+    padding-left: 15px;
+    margin: 10px;
+    border: none;
+}
+
+#challanForm input:hover {
+    height: 2.6rem;
+}
+
+#challanForm button {
+    align-self: center;
+    border: none;
+    height: 2rem;
+    width: 50vw;
+    border-radius: 20px;
+    padding-left: 15px;
+    background-color: #fff203;
+    color: rgb(0, 0, 0);
+    margin-left: 18px;
+}
+
+#challanForm button:hover {
+    background-color: #e1de4c;
+    height: 2.6rem;
+}
