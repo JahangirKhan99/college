@@ -111,13 +111,16 @@ footer {
 }
 
 .loader {
-    border-bottom: 3px solid rgb(145, 254, 21);
-    border-top: 3px solid rgb(145, 254, 21);
+    
     height: 7.2rem;
     width: 7.2rem;
+    border: 5px solid transparent;
+    border-top: 5px solid #00aaff;
+    border-bottom: 5px solid #00aaff;
     border-radius: 50%;
-    animation: spin 1.5s linear infinite;
+    animation: spin 1.2s linear infinite;
     z-index: 1;
+    opacity: 0.8;
 }
 
 @keyframes spin {
